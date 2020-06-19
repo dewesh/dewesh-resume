@@ -1,0 +1,176 @@
+%______________________________________________________________________________________________________________________
+% @brief    LaTeX2e Resume for Kamil K Wojcicki
+\documentclass[margin,line]{resume}
+
+
+%______________________________________________________________________________________________________________________
+\begin{document}
+
+
+\textbf{\begin{huge}\hspace{-25mm}Siddhant Wahal\end{huge}}	\hfill\vspace{0mm} D-313, R.K Hall
+\vspace{0mm}\\\vspace{0mm}%
+\hfill IIT Kharagpur
+\vspace{0mm}\\\vspace{0mm}%
+\hspace{-25mm} Senior Year Undergraduate Student		\hfill West Bengal - 721302, India
+\vspace{0mm}\\\vspace{0mm}%
+\hspace{-25mm} Department of Mechanical Engineering	\hfill Mobile: +91 9932156880
+\vspace{0mm}\\\vspace{0mm}%
+\hspace{-25mm} Indian Institute of Technology, Kharagpur \hfill siddhant.wahal@gmail.com
+
+
+\begin{resume}
+
+    %__________________________________________________________________________________________________________________
+    % Research Interests
+    \section{\mysidestyle Research\\Interests}
+%\vspace{5mm}%
+\begin{list2}
+\item  	Computational and theoretical fluid dynamics.					\vspace{2mm}%
+\item 	High performance scientific computing
+
+\end{list2}
+    %__________________________________________________________________________________________________________________
+    % Education
+    \section{\mysidestyle Education}
+%\vspace{5mm}%
+    \begin{list2}
+
+            \item \textbf{Indian Institute of Technology, Kharagpur} \hfill Kharagpur, India \vspace{0mm}\\\vspace{1mm}%
+    		Bachelor of Technology, Department of Mechanical Engineering \hfill 2010 -- present  \vspace{-1mm}\\\vspace{1mm}%
+		CGPA: 9.06/10 {(at the end of 6 semesters)}
+		 
+             \item \textbf{Army Public School, Kanpur} \hfill Kanpur, India \vspace{0mm}\\\vspace{1mm}%
+    		{Class XII, Central Board of Secondary Education} \hfill { 2009 -- 2010}  \vspace{-1mm}\\\vspace{1mm}%
+		{Performance: 91.75\%}
+% 
+%         \item \textbf{Narayana Junior College} \hfill Hyderabad, India  \vspace{0mm}\\\vspace{1mm}%
+% 		\textsl{Pre-University Studies } \hfill \textbf{2004 -- 2006} \vspace{-1mm}\\\vspace{1mm}%
+% 		\textsl{Aggregate: 93}
+
+    \end{list2}
+
+
+    %__________________________________________________________________________________________________________________
+    % Publications
+    \section{\mysidestyle Publications}
+
+
+\begin{list2}
+
+\item 	Siddharth Krithivasan, \textbf{Siddhant Wahal} and Santosh Ansumali, \emph{Diffused bounce-back condition for lattice Boltzmann method}, under consideration for publication in Physical Review E
+\vspace{2mm}
+
+\item 	Siddharth Krithivasan, \textbf{Siddhant Wahal}, Santosh Ansumali and K. R. Sreenivas, \emph{3D unsteady numerical investigation of flapping flight using the lattice Boltzmann Method}, 21\textsuperscript{st} International Conference on Discrete Simulation of Fluid Dynamics. \vspace{2mm}
+
+\end{list2}
+
+    %__________________________________________________________________________________________________________________
+    % Research Experience
+    \section{\mysidestyle Research\\Projects}
+
+
+Engineering Mechanics Unit,  \hfill May - July 2013 \\
+Jawaharlal Nehru Centre for Advanced Scientific Research, Bangalore, India \hfill (Summer Intern) \\
+Title: \emph{Diffused bounce-back condition for lattice Boltzmann method}
+\vspace{2mm}%
+\begin{itemize}
+\item Developed a novel, easy-to-implement solid-fluid boundary condition for the lattice Boltzmann (LB) method.
+\item Tested the scheme for an flow around an impulsively started cylinder.
+\item Achieved considerable reduction in noise associated with force value over existing momentum exchange algorithms
+\end{itemize}
+
+Engineering Mechanics Unit,  \hfill May - July 2012 \\
+Jawaharlal Nehru Centre for Advanced Scientific Research, Bangalore, India \hfill (Summer Intern) \\
+Title: \emph{An Analysis of Various Force Calculation Techniques for the Lattice Boltzmann Method}
+\vspace{2mm}%
+\begin{itemize}
+\item Developed a D2Q9 lattice Boltzmann (LB) code using C++.
+\item Adopted the scheme for parallel computing using the Message Passing Interface (MPI). 
+\item Simulated of flow around an impulsively started cylinder for various Reynolds numbers.
+\item Investigated various schemes to minimize noise associated with force on the cylinder.
+              \end{itemize} 	
+
+
+    %__________________________________________________________________________________________________________________
+    %  Skills
+    \section{\mysidestyle Skills} 
+
+   \begin{list2}
+\item Programming Languages: C, C++
+\item Parallel Programming Libraries: Compute Unified Device Architecture (CUDA), MPI
+\item Scientific Softwares: Tecplot, ParaView, MayaVi, MATLAB
+\item Document Preparation: \LaTeX, MS Office, Corel Draw X5  					\vspace{2mm}%
+
+\end{list2}
+
+
+    %__________________________________________________________________________________________________________________
+    %  Positions of responsibility
+    \section{\mysidestyle Positions of Responsibility} 
+
+   \begin{list2}
+
+\item 	 Coordinator in the Annual Technical Festival, Shaastra: Managed the Top Gun competition which involves testing the 
+flying skills of the participants in radio controlled aircraft. The event was sponsored by Boeing. \hfill \textbf{(Oct. 2010)}\vspace{2mm}% 
+
+\item 	Coordinator in the Annual Technical Festival, Shaastra: Proposed and managed The
+Wright Design competition which involves designing, building and flying a radio controlled glider
+for a maximum time of flight with given restrictions, sponsored by Airbus. \hfill \textbf{(Oct. 2009)}\vspace{2mm}% 
+
+
+\item 	 Coordinator in the Annual Cultural Festival, Saarang: Managed facilities and resources
+for various events in Saarang. \hfill \textbf{(2009)}\vspace{2mm}% 
+
+
+\item 	 Part of Clubs and Events team in Center For Innovation(CFI, http://cfi.iitm.ac.in/), a student run lab to nurture
+the new ideas of students. \hfill \textbf{(2009)}\vspace{2mm}% 
+
+\item 	 Headed a team of seven students for the Spirit of Engineering project in Shaastra(Annual Technical Festival if IIT Madras) 
+to develop an unconventional VTOL aircraft. \hfill \textbf{(2008)}\vspace{2mm}% 
+
+
+
+\item 	 Senior Cadet in National Cadet Corps (NCC): Headed the NCC group both in school and
+university level. \hfill \textbf{(2008)}\vspace{2mm}% 
+
+\end{list2}
+
+
+    %__________________________________________________________________________________________________________________
+    %  Relevant Coursework
+    \section{\mysidestyle Relevant \\Courses} 
+
+Fluid Mechanics, Physics of Fluids, Aerodynamics, Flight Dynamics, Gas Dynamics, Thermodynamics, Propulsion, Structures, Vibrations, Special Functions and PDEs, 
+Complex variable and Transform Techniques, Computational Fluid Dynamics, Finite Element Analysis, Numerical Methods for High Performance Computing, 
+Acoustic Instabilities in Combustion, Stability Transition and Control of Hydrodynamic Shear Flows, Continuum Mechanics, Introduction to Turbulence, 
+Transport Processes in Reacting Flows, Heat transfer.
+
+
+    %__________________________________________________________________________________________________________________
+    %  Relevant Coursework
+    \section{\mysidestyle References} 
+
+\textbf{Dr. Santosh Ansumai }  \hfill e-mail: ansumali@jncasr.ac.in \\
+Engineering Mechanics Unit \\
+JNCASR, Bangalore, India - 560 064
+
+
+\textbf{Prof. Sauro Succi} \hfill e-mail: succi@iac.cnr.it \\
+Istituto Applicazioni Calcolo ``Mauro Picone'', C.N.R \\
+Via dei Taurini, 19 \\
+00185, Rome (ITALY) 
+
+
+\textbf{Dr. A. Sameen} \hfill e-mail: sameen@ae.iitm.ac.in \\
+Department of Aerospace Engineering \\
+Indian Institute of Technology Madras \\
+Chennai, India - 600 036 
+
+%______________________________________________________________________________________________________________________
+\end{resume}
+\end{document}
+
+
+%______________________________________________________________________________________________________________________
+% EOF
+

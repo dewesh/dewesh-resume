@@ -1,0 +1,262 @@
+\documentclass[11pt]{amsart}
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{amsfonts, amscd, amssymb, amsthm, amsmath}
+\usepackage{pdfsync}%leaves makers for tex searching
+\usepackage{enumerate}
+
+%%%%% Margins %%%%% 
+\setlength{\topmargin}{1in} %top/bot margins
+\setlength{\oddsidemargin}{\topmargin} %sidemargins
+
+\setlength{\textheight}{11in} \setlength{\textwidth}{8.5in}
+\setlength{\hoffset}{-1in} \setlength{\voffset}{-1in} \setlength{\evensidemargin}{\oddsidemargin} \addtolength{\textheight}{-2 \topmargin}\addtolength{\textwidth}{-2\oddsidemargin}
+\setlength{\headheight}{0pt} \setlength{\headsep}{20pt} \setlength{\footskip}{20pt}
+\addtolength{\textheight}{-\footskip} \addtolength{\textheight}{-\headheight} \addtolength{\textheight}{-\headsep}
+
+
+
+%%%%% Theorems %%%%% 
+\theoremstyle{plain}
+	\newtheorem{thm}{Theorem}[section]
+	\newtheorem{lemma}[thm]{Lemma}
+	\newtheorem{prop}[thm]{Proposition}
+	\newtheorem{cor}[thm]{Corollary}
+\theoremstyle{definition}
+	\newtheorem*{defn}{Definition}
+	\newtheorem{remark}[thm]{Remark}
+\theoremstyle{example}
+	\newtheorem*{example}{Example}
+
+
+%%%%% Pictures %%%%% 
+\usepackage{etex} %fixes the fight that pictex has with every other drawing package
+\usepackage{pictexwd}
+\usepackage{tikz}
+\tikzstyle{V}=[draw, fill =black, circle, inner sep=0pt, minimum size=4pt]
+
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+\usepackage[pdftex,bookmarks]{hyperref}
+
+
+%%%%% Color  %%%%% 
+\usepackage{color}
+\definecolor{dred}{rgb}{.65, 0, 0.15}
+\newcommand{\NOTE}[1]{{\color{blue}#1}}
+\newcommand{\MOVED}[1]{{\color{gray}#1}}
+
+
+%%%%% Alphabets %%%%% 
+\def\cA{\mathcal{A}}\def\cB{\mathcal{B}}\def\cC{\mathcal{C}}\def\cD{\mathcal{D}}\def\cE{\mathcal{E}}\def\cF{\mathcal{F}}\def\cG{\mathcal{G}}\def\cH{\mathcal{H}}\def\cI{\mathcal{I}}\def\cJ{\mathcal{J}}\def\cK{\mathcal{K}}\def\cL{\mathcal{L}}\def\cM{\mathcal{M}}\def\cN{\mathcal{N}}\def\cO{\mathcal{O}}\def\cP{\mathcal{P}}\def\cQ{\mathcal{Q}}\def\cR{\mathcal{R}}\def\cS{\mathcal{S}}\def\cT{\mathcal{T}}\def\cU{\mathcal{U}}\def\cV{\mathcal{V}}\def\cW{\mathcal{W}}\def\cX{\mathcal{X}}\def\cY{\mathcal{Y}}\def\cZ{\mathcal{Z}}
+
+\def\AA{\mathbb{A}} \def\BB{\mathbb{B}} \def\CC{\mathbb{C}} \def\DD{\mathbb{D}} \def\EE{\mathbb{E}} \def\FF{\mathbb{F}} \def\GG{\mathbb{G}} \def\HH{\mathbb{H}} \def\II{\mathbb{I}} \def\JJ{\mathbb{J}} \def\KK{\mathbb{K}} \def\LL{\mathbb{L}} \def\MM{\mathbb{M}} \def\NN{\mathbb{N}} \def\OO{\mathbb{O}} \def\PP{\mathbb{P}} \def\QQ{\mathbb{Q}} \def\RR{\mathbb{R}} \def\SS{\mathbb{S}} \def\TT{\mathbb{T}} \def\UU{\mathbb{U}} \def\VV{\mathbb{V}} \def\WW{\mathbb{W}} \def\XX{\mathbb{X}} \def\YY{\mathbb{Y}} \def\ZZ{\mathbb{Z}}  
+
+\def\fa{\mathfrak{a}} \def\fb{\mathfrak{b}} \def\fc{\mathfrak{c}} \def\fd{\mathfrak{d}} \def\fe{\mathfrak{e}} \def\ff{\mathfrak{f}} \def\fg{\mathfrak{g}} \def\fh{\mathfrak{h}} \def\fj{\mathfrak{j}} \def\fk{\mathfrak{k}} \def\fl{\mathfrak{l}} \def\fm{\mathfrak{m}} \def\fn{\mathfrak{n}} \def\fo{\mathfrak{o}} \def\fp{\mathfrak{p}} \def\fq{\mathfrak{q}} \def\fr{\mathfrak{r}} \def\fs{\mathfrak{s}} \def\ft{\mathfrak{t}} \def\fu{\mathfrak{u}} \def\fv{\mathfrak{v}} \def\fw{\mathfrak{w}} \def\fx{\mathfrak{x}} \def\fy{\mathfrak{y}} \def\fz{\mathfrak{z}}
+\def\fgl{\mathfrak{gl}}  \def\fsl{\mathfrak{sl}}  \def\fso{\mathfrak{so}}  \def\fsp{\mathfrak{sp}}  
+\def\GL{\mathrm{GL}} \def\SL{\mathrm{SL}}  \def\SP{\mathrm{SL}}
+
+\def\<{\langle} \def\>{\rangle}
+\def\ad{\mathrm{ad}} 
+\def\Aut{\mathrm{Aut}}
+\def\dim{\mathrm{dim}} 
+\def\End{\mathrm{End}} 
+\def\ev{\mathrm{ev}} 
+\def\half{\hbox{$\frac12$}}
+\def\Hom{\mathrm{Hom}} 
+\def\qtr{\mathrm{qtr}} 
+\def\tr{\mathrm{tr}} 
+\def\Tr{\mathrm{Tr}} 
+\def\vep{\varepsilon}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\title{Homework 8}
+\author{Solutions (sketches)}
+%\date{\today}                                           % Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{enumerate}[\qquad]
+\item[\bf 4.1.1] {\bf Give a proof or a counterexample for each statement below.}\\
+
+\begin{enumerate}[\bf (a)]
+\item {\bf Every graph with connectivity 4 is 2-connected.}
+\begin{proof}[Answer.] True. $2 \leq \kappa(G) = 4$. 
+
+
+\end{proof}
+
+\item {\bf Every 3-connected graph has connectivity 3.}
+\begin{proof}[Answer.] False. $K_5$ is 3-connected b/c it is also 4-connected. 
+
+
+\end{proof}
+
+\item {\bf Every $k$-connected graph is $k$-edge-connected.}
+\begin{proof}[Answer.]
+True, $\kappa'(G) \geq \kappa(G)$. 
+
+\end{proof}
+
+\item {\bf Every $k$-edge-connected graph is $k$-connected.}
+\begin{proof}[Answer.]
+False. Consider the bow-tie. 
+\end{proof}
+
+\end{enumerate}
+
+\bigskip
+
+
+
+
+\item[\bf 4.1.7] {\bf Obtain a formula for the number of spanning trees of a connected graph in terms of the numbers of spanning trees of its blocks.}\\
+
+\begin{proof}[Answer.]
+Take the product. 
+
+\end{proof}
+
+\bigskip
+
+
+
+
+\item[\bf 4.1.10] {\bf Find the smallest 3-regular simple graph having connectivity 1.}\\
+
+\begin{proof}[Answer.]
+Start with a vertex $v$ that is to be cut. $G-v$ has at least two components, and each component is almost 3-regular (has one or two vertices with degree 2). Consider a component with one vertex of degree 2. Then it has an even number of vertices w degree 3 (degree sum formula). Zero or 2 is not possible; but 4 is. For the comp w/ 2 degree-2 vertices, it is possible to do this w/ 2 deg-3 vertices but not w/ none. THe smallest example has 9 vertices. 
+
+\end{proof}
+
+\bigskip
+
+
+
+
+\item[\bf 4.1.14] {\bf Let $G$ be a connected graph in which for every edge $e$, there are cycles $C_1$ and $C_2$ containing $e$ whose only common edge is $e$.  Prove that $G$ is 3-edge-connected. Use this to show that the Petersen graph is 3-edge-connected.}\\
+
+\begin{proof}[Answer.] By contradiction.
+
+Suppose removing one edge $uv$ disconnects the graph. That edge belonged to cycles $C_1,C_2$ whose only common edge was $uv$. $u,v$ are still connected in the bigger cycle $C_1\cup C_2 -uv$, thus the whole graph is still connected.
+\\
+
+Suppose removing a second edge disconnects the graph. Call that edge $f=ab$. Everything is still in a cycle after we removed $uv$. If we remove an edge from this cycle, the graph will still be connected.  If we remove an edge not in the cycle, then those two vertices $a,b$ are still connected as in the previous case.
+
+
+\end{proof}
+
+\bigskip
+
+
+
+
+\item[\bf 4.1.20] {\bf Let $G$ be a simple $n$-vertex graph with $n/2 - 1 \leq \delta(G)\leq n-2$. Prove that $G$ is $k$-connected for all $k$ with $k\leq 2\delta(G)+2-n$. Prove that this is best possible for all $\delta\geq n/2-1$ by constructing a simple $n$-vertex graph with minimum degree $\delta$ that is not $k$-connected for $k=2\delta+3-n$. (Comment: Proposition 1.3.15 is the special case of this when $\delta(G) = (n-1)/2$.)
+}
+
+\begin{proof}Let $x,y$ be any two non-adjacent vertices. Fix $k$ such that $k\leq 2\delta +2-n$. Then $\delta \geq (n+k-2)/2$,  and $|N(x)|, |N(y)| \geq \delta \geq (n+k-2)/2$. Also, $|N(x)\cup N(y)| \leq n-2$.
+
+\begin{align*} |N(x)\cap N(y)| &  = |N(x)| + |N(y)| - |N(x)\cup N(y)| \\
+& \geq (n+k-2)/2 + (n+k-2)/2 - (n-2) \\
+& = k\end{align*}
+
+Since $x,y$ were arbitrary, this means that for any pair of vertices, any set of fewer than $k$ vertices cannot disconnect them.
+
+
+\end{proof}
+
+\bigskip
+
+
+
+
+\item[\bf 4.1.25] {\bf \textit{$\kappa'(G) = \delta(G)$ for diameter 2.}  Let $G$ be a simple graph with diameter 2, and let $[S,\overline{S}]$ be a minimum edge cut with $|S|\leq |\overline{S}|$.}\\
+
+\begin{enumerate}[\bf (a)]
+\item  {\bf Prove that every vertex of $S$ has a neighbor in $\overline{S}$.}
+
+\begin{proof}
+Because of the diameter, only one of $S$ or $\bar S$ can contain a vertex which is not adjacent to all vertices in the other set. Suppose $S$ has one such vertex $v$. Let $k$ be the size of $\bar S$. Since $\bar S$ has the property that every element of $\bar S$ is adjacent to some element of $S$, the edge cut between them must-have size at least $k$. Since the edge cut is minimum, $\delta(G) \geq \kappa'(G) \geq k$. But then the degree of $v$ is at least $k = |\bar S| \geq |S|$, which is not possible.
+\end{proof}
+
+\item  {\bf Use part (a) and Corollary 4.1.13 to prove that $\kappa'(G) = \delta(G)$. (Plesnik [1975])}
+\begin{proof}
+
+We know that $|[S,\bar{S}]| \geq |S|$ because every vertex in $S$ has at least one edge connecting it to $\bar{S}$.
+
+Suppose $|[S,\bar{S}]| < \delta$. Then $|S| > \delta$ (Cor 4.1.13). Then we have $|S| > |[S,\bar{S}]|$, a contradiction of what we proved in part (a). Therefore $|[S,\bar{S}]| \geq \delta$, which means they are equivalent. $\kappa' \leq \delta$.
+
+
+\end{proof}
+\end{enumerate}
+\bigskip
+
+
+
+
+\item[\bf 4.2.2] {\bf Prove that if $G$ is 2-edge-connected and $G'$ is obtained from $G$ by subdividing an edge of $G$, then $G'$ is 2-edge-connected. Use this to prove that every graph having a closed-ear decomposition is 2-edge-connected. (Comment: This is an alternative proof of sufficiency for Theorem 4.2.10.)}\\
+
+\begin{proof}[Answer.] (Sketch)
+
+If $G$ is 2-edge connected, then every edge (and therefore vertex) is in a cycle. Subdividing an edge keeps this true.
+
+A cycle is 2 edge connected. If we add an edge connecting any two points on the cycle or if we add an edge which is a loop, then the graph is still 2 edge connected. Then we can subdivide the added edge, which is the same as an ear. 
+
+
+
+
+\end{proof}
+
+\bigskip
+
+
+
+
+\item[\bf 4.2.8] {\bf Prove that a simple graph $G$ is 2-connected if and only if for every ordered triple, $(x,y,z)$, of distinct vertices, $G$ has an $x,z-$path through $y$.
+}
+
+\begin{proof} (Sketch)
+
+Suppose $G$ is 2-connected. Let $(x,y,z)$ be any ordered triple of vertices. Then let $U = \{x,z\}$. Then by the fan lemma, $\exists$ a $y, U$ fan of 2 paths. These two paths only share $y$, thus they are disjoint $x,y$ and $y,z$ paths. Concatenate them to create an $x,z$ path through $y$.
+
+Now suppose $G$ is disconnected or 1-connected. If $G$ is disconnected, the proof is trivial. If $G$ is 1-connected, then removing $v$ disconnects the graph for some $v$. Consider $2$ components $C_1, C_2$ of $G-v$. Let $x \in V(C_1)$ and $z \in V(C_2)$. Now, consider the ordered triple $(v,x,z)$. We take a $v,x$ path which exists because $G$ is connected, but there is no $x,z$ path which does not go through $v$. Thus the graph does not have the property above.
+
+
+\end{proof}
+
+\bigskip
+
+
+
+
+\item[\bf 4.2.22] {\bf Suppose that $\kappa(G) = k$ and $\text{diam } G = d$.  Prove that $n(G)\geq k(d-1)+2$ and $\alpha(G)\geq \lceil(1+d)/2\rceil$. For each $k\geq 1$ and $d\geq 2$, construct a graph with connectivity $k$ and diameter $d$ for which equality holds in both bounds.}\\
+
+\begin{proof}For $\alpha(G)$. Consider $u,v \in V(G)$ with $d(u,v) = d$. Then the shortest $u,v$ path has $d$ edges and $d+1$ vertices. Every other vertex must not be neighbors, or else a shorter path exists. Depending on if $d+1$ is odd or even, there is at least an independent set of $\lceil(1+2)/2\rceil$ vertices.
+
+For $n(G)$. Let $d(x,y) = d$ for some $x,y \in V(G)$. We know $x,y$ exists because of the diameter. Then $\exists k$ internally disjoint $x,y$ paths of length $\geq d$. Each of these paths has $d-1$ internal vertices. Thus there are $k(d-1)$ internal vertices, and $2$ endpoints, $x,y$, which means $n(G) \geq k(d-1)+2$.
+
+Given $k$ and $d$, we will construct a graph such that equalities hold. Create "components" $C_0,...,C_d$ such that $C_0,C_d$ are single vertices $v_0,v_d$ respectively, and for $0<i<d$, $C_i = K_k$. Then, if $i=j\pm1$, connect all the vertices in $C_i, C_j$. 
+
+Clearly this graph $G$ has $n(G) = k(d-1)+1+1$. $d(v_0,v_d) = d$. It is $k$-connected. If we delete $<k$ vertices, then any internal "component" still has at least one vertex left (which is connected to the top and bottom). If we take one vertex from each $C_i$ with $i \equiv 0 \mod{2}$ then we have a vertex cover of size $\lceil(d+1)/2\rceil$, which bounds $\alpha$ from above. 
+
+\end{proof}
+
+\bigskip
+
+
+
+
+
+\end{enumerate}
+
+
+\end{document}
